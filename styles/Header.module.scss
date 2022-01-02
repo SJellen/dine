@@ -1,4 +1,13 @@
 
 .container {
     border: 1px solid red;
+    background-color: red;
+    height: 110px;
+    display: flex;
+    div {
+        border: 1px solid blue;
+        display: flex;
+        align-items: flex-end;
+        margin-left: 165px;
+    }
 }
