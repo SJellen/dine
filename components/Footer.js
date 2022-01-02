@@ -10,16 +10,16 @@ export default function Footer() {
             <div className={styles.rightContainer}>
                 <div className={styles.address}>
                     <ul>
-                        <li></li>
-                        <li></li>
-                        <li></li>
+                        <li>Marthwaite, Sedbergh</li>
+                        <li>Cumbria</li>
+                        <li>+00 44 123 4567</li>
                     </ul>
                 </div>
                 <div className={styles.hours}>
                     <ul>
-                        <li></li>
-                        <li></li>
-                        <li></li>
+                        <li>OPEN TIMES</li>
+                        <li>MON - FRI: 09:00 AM - 10:00 PM</li>
+                        <li>SAT - SUN: 09:00 AM - 11:30 PM</li>
                     </ul>
                 </div>
             </div>
