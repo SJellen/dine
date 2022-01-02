@@ -1,5 +1,25 @@
 @use 'variables' as V;
 
 .container {
-    border: 1px solid red;
+    background-color: V.$codGray;
+    height: 240px;
+    display: flex;
+    justify-content: space-between;
+    .leftContainer {
+        border: 1px solid green;
+        display: flex;
+        align-items: center;
+        margin-left: 165px;
+    }
+    .rightContainer {
+        border: 1px solid red;
+        width: 800px;
+        margin-right: 165px;
+        .address {
+            border: 1px solid blue;
+        }
+        .hours {
+            border: 1px solid blue;
+        }
+    }
 }
