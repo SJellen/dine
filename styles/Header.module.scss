@@ -1,13 +1,29 @@
 
 .container {
-    border: 1px solid red;
     background-color: red;
     height: 110px;
-    display: flex;
-    div {
+    .flexContainer {
+        height: 110px;
+        width: 100%;
+        display: flex;
+        margin-left: 10%;
+        background-color: green;
+        .imageContainer {
         border: 1px solid blue;
         display: flex;
         align-items: flex-end;
-        margin-left: 165px;
     }
+    }
+    
+}
+
+@media only screen and (min-width: 1440px){
+    .flexContainer {
+        max-width: 1440px;
+        margin: 0 auto;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+
 }

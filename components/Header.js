@@ -5,10 +5,11 @@ import Image from 'next/image'
 export default function Header() {
     return (
         <header className={styles.container}>
-            <div>
+            <div className={styles.flexContainer}>
+               <div className={styles.imageContainer}>
                 <Image src="/assets/logo.svg" alt="icon" width="103" height="40" />
-            </div>
-            
+               </div> 
+            </div> 
         </header>
     )
 }

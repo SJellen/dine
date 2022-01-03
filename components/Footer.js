@@ -4,7 +4,8 @@ import Image from 'next/image'
 export default function Footer() {
     return (
         <footer className={styles.container}>
-            <div className={styles.leftContainer}>
+            <div className={styles.flexContainer}>
+                <div className={styles.leftContainer}>
                 <Image src="/assets/logo.svg" alt="icon" width="103" height="40" />
             </div>
             <div className={styles.rightContainer}>
@@ -23,6 +24,8 @@ export default function Footer() {
                     </ul>
                 </div>
             </div>
+            </div>
+            
         </footer>
     )
 }
