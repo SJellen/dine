@@ -24,8 +24,7 @@ export default function Footer() {
                     </ul>
                 </div>
             </div>
-            </div>
-            
+            </div> 
         </footer>
     )
 }
