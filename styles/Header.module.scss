@@ -3,24 +3,23 @@
     background-color: red;
     height: 110px;
     .flexContainer {
-        height: 110px;
+        height: 100%;
         width: 100%;
         display: flex;
-        margin-left: 10%;
+        margin: 0 auto;
         background-color: green;
         .imageContainer {
         border: 1px solid blue;
+        margin-left: 10%;
         display: flex;
         align-items: flex-end;
     }
-    }
-    
+    } 
 }
 
 @media only screen and (min-width: 1440px){
     .flexContainer {
         max-width: 1440px;
-        margin: 0 auto;
     }
 }
 
