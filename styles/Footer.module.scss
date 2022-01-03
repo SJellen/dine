@@ -6,7 +6,7 @@
     .flexContainer {
         display: flex;
         justify-content: space-between;
-        height: 240px;
+        height: 100%;
         .leftContainer {
         border: 1px solid green;
         min-width: 105px;
@@ -54,5 +54,21 @@
 }
 
 @media only screen and (max-width: 900px) {
+    .container {
+        height: 328px;
+        .flexContainer {
+            align-items: center;
+            .leftContainer{
+                height: 213px;
+                align-items: flex-start;
+            }
+            .rightContainer {
+                flex-direction: column;
+                .address {
+                    width: 350px;
+                }
 
+            }
+        }   
+    }
 }
