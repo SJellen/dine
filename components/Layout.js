@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Header from './Header'
+import ReservationFooter from './ReservationFooter'
 import Footer from './Footer'
 
 
@@ -17,6 +18,7 @@ export default function Layout({children}) {
             <main >
                 {children}
             </main>
+            <ReservationFooter />
             <Footer />
         </div>
     )

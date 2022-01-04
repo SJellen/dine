@@ -1,0 +1,23 @@
+@use 'variables' as V;
+
+.container {
+    background-color: V.$codGray;
+    height: 240px;
+    border: 1px solid red;
+    background-image: url(../public/assets/homepage/ready-bg-desktop.jpg);
+    .flexContainer {
+        height: 100%;
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 1440px){
+
+    .container {
+        background-image: url(../public/assets/homepage/ready-bg-desktop@2x.jpg);
+        .flexContainer {
+        max-width: 1440px;
+        margin: 0 auto;
+    }
+    }
+}
