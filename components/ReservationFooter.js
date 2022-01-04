@@ -7,7 +7,6 @@ export default function ReservationFooter() {
             <div className={styles.flexContainer}>
                 
             </div>
-            
         </div>
     )
 }
