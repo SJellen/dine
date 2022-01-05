@@ -1,12 +1,15 @@
 import styles from '../styles/Footer.module.scss'
 import Image from 'next/image'
+import Link from 'next/link'
 
 export default function Footer() {
     return (
         <footer className={styles.container}>
             <div className={styles.flexContainer}>
                 <div className={styles.leftContainer}>
-                <Image src="/assets/logo.svg" alt="icon" width="103" height="40" />
+                    <Link href="/" passHref  >
+                        <Image src="/assets/logo.svg" alt="icon" width="103" height="40" />
+                    </Link>
             </div>
             <div className={styles.rightContainer}>
                 <div className={styles.address}>

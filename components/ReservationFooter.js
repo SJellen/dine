@@ -7,7 +7,7 @@ export default function ReservationFooter() {
         <div className={styles.container}>
             <div className={styles.flexContainer}>
                 <h2>Ready to make a reservation?</h2>
-                <Link href="/" passHref >
+                <Link href="/book" passHref >
                     <a>BOOK A TABLE</a>
                 </Link>
                 

@@ -12,6 +12,9 @@
         display: flex;
         align-items: center;
         margin-left: 10%;
+        img:hover {
+            cursor: pointer;
+        }
     }
     .rightContainer {
         width: 800px;
