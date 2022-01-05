@@ -4,7 +4,6 @@ export default function Form() {
     
     return (
         <div className={styles.container}>
-            Form
         </div>
     )
 }

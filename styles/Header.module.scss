@@ -1,15 +1,16 @@
 
 .container {
-    background-color: red;
     height: 110px;
+    position: absolute;
+    z-index: 3;
+    background-color: none;
+    width: 100%;
     .flexContainer {
         height: 100%;
         width: 100%;
         display: flex;
         margin: 0 auto;
-        background-color: green;
         .imageContainer {
-        border: 1px solid blue;
         margin-left: 10%;
         display: flex;
         align-items: flex-end;
