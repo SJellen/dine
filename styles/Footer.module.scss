@@ -45,6 +45,10 @@
 }
 
 @media only screen and (min-width: 1440px){
+    .container {
+        max-width: 1440px;
+        margin: 0 auto;
+    }
     .flexContainer {
         max-width: 1440px;
         margin: 0 auto;

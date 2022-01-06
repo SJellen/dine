@@ -10,12 +10,23 @@
     background-image: url(../../public/assets/patterns/pattern-curve-bottom-right.svg);
     background-repeat: no-repeat;
     border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .imgContainer {
+        display: flex;
+        border: 1px solid silver;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        margin-left: 40%;
+    }
     form {
         width: 540px;
         height: 560px;
         background-color: red;
         position: relative;
-        left: 50%;
-        margin-top: -350px;
+        left: -10%;
+        margin-top: -100%;
     }
 }
