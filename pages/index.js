@@ -5,6 +5,7 @@ import Hero from '../components/Home/Hero'
 import Enjoyable from '../components/Home/Enjoyable'
 import Locally from '../components/Home/Locally'
 import Menu from '../components/Home/Menu'
+import Switcher from '../components/Home/Switch'
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       <Enjoyable />
       <Locally />
       <Menu />
+      <Switcher />
     </div>
   )
 }
