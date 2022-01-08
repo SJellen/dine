@@ -21,6 +21,9 @@
         position: relative;
         top: -67.5%;
         left: 10%;
+        .logoContainer {
+           display: none;
+        }
         h1 {
             margin-top: 0rem;
             font-size: 64px;
