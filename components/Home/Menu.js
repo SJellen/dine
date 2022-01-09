@@ -31,7 +31,7 @@ export default function Menu() {
                         <h3>Summer Fruit Chocolate Mousse</h3>
                         <p>Creamy mousse combined with summer fruits and dark chocolate shavings.</p>
                     </div>
-                </div>
+                </div>    
             </div>
         </div>
     )
