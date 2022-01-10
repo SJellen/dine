@@ -5,7 +5,9 @@ export default function Switcher() {
 
     return (
         <div className={styles.container}>
-            swithcer
+            <div className={styles.imgContainer}></div>
+            <div className={styles.textContainer}></div>
+            <div className={styles.selectionContainer}></div>
         </div>
     )
 }
