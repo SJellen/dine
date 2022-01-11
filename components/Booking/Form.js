@@ -9,16 +9,19 @@ export default function Form() {
                 <Image src="/assets/patterns/pattern-lines.svg" alt="line pattern" width="160" height="70"  />
             <div>
                 <form>
-                    <input
-                        id="name"
-                        className='name'
-                        placeholder='name'
-                     />
-                    <input
-                        id="email"
-                        className='email'
-                        placeholder='email' 
-                    />
+                    <div className={styles.topContainer}>
+                       <input
+                            id="name"
+                            className='nameEmailInput'
+                            placeholder='Name'
+                        />
+                        <input
+                            id="email"
+                            className='nameEmailInput'
+                            placeholder='Email' 
+                        /> 
+                    </div>
+                    
                     <input />
                     <input />
                     <input />

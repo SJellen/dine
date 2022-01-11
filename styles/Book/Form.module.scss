@@ -24,7 +24,7 @@
     form {
         width: 540px;
         height: 560px;
-        background-color: red;
+        background-color: white;
         position: relative;
         left: -10%;
         margin-top: -100%;
@@ -32,10 +32,22 @@
         flex-direction: column;
         align-items: center;
         justify-content: space-evenly;
-        input {
-            border: 1px solid red;
-            width: 90%;
-            height: 45px;
+        .topContainer {
+            width: 80%;
+            display: flex;
+            flex-direction: column;
+            input {
+                width: 100%;
+                border: none;
+                border-bottom: 1px solid V.$codGray;
+                height: 45px;
+                margin: 1rem auto;
+            }
+            input::placeholder {
+                color: silver;
+                font-size: 18px;
+            }
         }
+        
     }
 }
