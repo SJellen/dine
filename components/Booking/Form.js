@@ -21,12 +21,16 @@ export default function Form() {
                             placeholder='Email' 
                         /> 
                     </div>
-                    
-                    <input />
-                    <input />
-                    <input />
-                    <input />
-                    <input />
+                    <div className={styles.dateContainer}>
+                        
+                    </div>
+                    <div className={styles.timeContainer}>
+                        
+                    </div>
+                    <div className={styles.selectContainer}>
+
+                    </div>
+                    <a>MAKE RESERVATIONS</a>
                 </form>
             </div>
         </div>

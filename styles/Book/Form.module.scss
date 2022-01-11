@@ -48,6 +48,19 @@
                 font-size: 18px;
             }
         }
+        .dateContainer, .timeContainer, .selectContainer {
+            width: 80%;
+            height: 45px;
+            border: 1px solid red;
+        }
+        a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid red;
+            width: 80%;
+            height: 45px;
+        }
         
     }
 }
