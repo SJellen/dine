@@ -25,7 +25,7 @@ export default function Form() {
                         <h4>Pick a date</h4>
                         <input className='twoDigitInput' />
                         <input className='twoDigitInput' />
-                        <input className='fourDigitInput' />
+                        <input className='fourDigitInput' id='fourDigitInput' />
                     </div>
                     <div className={styles.timeContainer}>
                         <h4>Pick a time</h4>

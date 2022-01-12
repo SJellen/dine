@@ -46,6 +46,7 @@
             input::placeholder {
                 color: silver;
                 font-size: 18px;
+                font-weight: 400;
             }
         }
         .dateContainer, .timeContainer {
@@ -56,24 +57,37 @@
             flex-direction: row;
             justify-content: space-between;
             input {
-                background-color: red;
+                border: none;
+                border-bottom: 1px solid V.$codGray;
                 width: 80px;
                 
             }
             h4 {
-                color: gold;
-            }
+                color: V.$codGray;
+                font-size: 18px;
+                font-weight: 400;
+                
+            } 
             
+        }
+
+        
+
+        .timeContainer {
+            span {
+                width: 97px;
+                border: 1px solid V.$codGray;
+            }
         }
 
         .selectContainer {
             width: 80%;
             height: 45px;
-            border: 1px solid red;
             display: flex;
             flex-direction: row;
             align-items: center;
             justify-content: space-between;
+            border-bottom: 1px solid V.$codGray;
         }
         
         
