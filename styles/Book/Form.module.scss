@@ -54,6 +54,16 @@
             border: 1px solid red;
             display: flex;
             flex-direction: row;
+            justify-content: space-between;
+            input {
+                background-color: red;
+                width: 80px;
+                
+            }
+            h4 {
+                color: gold;
+            }
+            
         }
 
         .selectContainer {
