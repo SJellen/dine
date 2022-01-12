@@ -22,13 +22,18 @@ export default function Form() {
                         /> 
                     </div>
                     <div className={styles.dateContainer}>
-                        
+                        <h4>Pick a date</h4>
+                        <input className='twoDigitInput' />
+                        <input className='twoDigitInput' />
+                        <input />
                     </div>
                     <div className={styles.timeContainer}>
-                        
+                        <h4>Pick a time</h4>
+                        <input className='twoDigitInput' />
+                        <input className='twoDigitInput' />
                     </div>
                     <div className={styles.selectContainer}>
-
+                        <span>-</span><span>4 people</span><span>+</span>
                     </div>
                     <a>MAKE RESERVATIONS</a>
                 </form>
