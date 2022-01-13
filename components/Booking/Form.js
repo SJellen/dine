@@ -43,7 +43,9 @@ export default function Form() {
                         <h4>Pick a time</h4>
                         <input className='twoDigitInput' />
                         <input className='twoDigitInput' />
-                        <span>AM</span>
+                        <span className={styles.amPmContainer}>AM
+                            <Image src="/assets/icons/icon-arrow.svg" alt="line pattern" width="16" height="8"  />
+                        </span>
                     </div>
                     <div className={styles.selectContainer}>
                         <span onClick={() => decrement()} className={styles.decrement} >

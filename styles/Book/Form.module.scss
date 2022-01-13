@@ -75,6 +75,13 @@
                 width: 97px;
                 border: 1px solid V.$codGray;
             }
+            .amPmContainer {
+                border: 1px solid blue;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+                align-items: center;
+            }
         }
 
         .selectContainer {
