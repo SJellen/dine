@@ -46,7 +46,13 @@ export default function Form() {
                         <span>AM</span>
                     </div>
                     <div className={styles.selectContainer}>
-                        <span onClick={() => decrement()}>-</span><span >{peopleCount} people</span><span onClick={() => increment()}>+</span>
+                        <span onClick={() => decrement()} className={styles.decrement} >
+                            <Image src="/assets/icons/icon-minus.svg" alt="line pattern" width="10" height="3"  />
+                        </span>
+                        <span >{peopleCount} people</span>
+                            <span onClick={() => increment()} className={styles.increment} >
+                                <Image src="/assets/icons/icon-plus.svg" alt="line pattern" width="10" height="10"  />
+                        </span>
                     </div>
                     <a>MAKE RESERVATIONS</a>
                 </form>

@@ -60,15 +60,12 @@
                 border: none;
                 border-bottom: 1px solid V.$codGray;
                 width: 80px;
-                
             }
             h4 {
                 color: V.$codGray;
                 font-size: 18px;
                 font-weight: 400;
-                
             } 
-            
         }
 
         
@@ -88,6 +85,17 @@
             align-items: center;
             justify-content: space-between;
             border-bottom: 1px solid V.$codGray;
+            font-size: 18px;
+            font-weight: 700;
+            .decrement {
+                margin-left: 1.5rem;
+            }
+            .increment {
+                margin-right: 1.5rem;
+            }
+            .decrement, .increment:hover {
+                cursor: pointer;
+            }
         }
         
         
