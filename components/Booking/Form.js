@@ -1,7 +1,19 @@
+import { useState } from 'react'
 import styles from '../../styles/Book/Form.module.scss'
 import Image from 'next/image'
 
 export default function Form() {
+
+    const [peopleCount, setPeopleCount] = useState(4)
+
+    function increment() {
+        setPeopleCount(prevState => prevState + 1)
+    }
+
+    function decrement() {
+        if (peopleCount > 1) setPeopleCount(prevState => prevState - 1)
+    }
+
     
     return (
         <div className={styles.container}>
@@ -34,7 +46,7 @@ export default function Form() {
                         <span>AM</span>
                     </div>
                     <div className={styles.selectContainer}>
-                        <span>-</span><span>4 people</span><span>+</span>
+                        <span onClick={() => decrement()}>-</span><span >{peopleCount} people</span><span onClick={() => increment()}>+</span>
                     </div>
                     <a>MAKE RESERVATIONS</a>
                 </form>
