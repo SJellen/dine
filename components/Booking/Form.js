@@ -5,6 +5,7 @@ import Image from 'next/image'
 export default function Form() {
 
     const [peopleCount, setPeopleCount] = useState(4)
+    const [isAm, setIsAm] = useState(true)
 
     function increment() {
         setPeopleCount(prevState => prevState + 1)
@@ -43,7 +44,7 @@ export default function Form() {
                         <h4>Pick a time</h4>
                         <input className='twoDigitInput' />
                         <input className='twoDigitInput' />
-                        <span className={styles.amPmContainer}>AM
+                        <span className={styles.amPmContainer}>{isAm ? 'AM' : 'PM'}
                             <Image src="/assets/icons/icon-arrow.svg" alt="line pattern" width="16" height="8"  />
                         </span>
                     </div>
