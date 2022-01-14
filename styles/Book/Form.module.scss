@@ -68,8 +68,6 @@
             } 
         }
 
-        
-
         .timeContainer {
             span {
                 width: 97px;
@@ -85,14 +83,23 @@
         }
 
         .amPmSelector {
-                    z-index: 2;
-                    position: absolute;
-                    background-color: white;
-                    top: 22rem;
-                    right: 10%;
-                    border: 1px solid black;
-                    width: 100px;
-                    height: 103px;
+            z-index: 2;
+            position: absolute;
+            background-color: white;
+            top: 22rem;
+            right: 10%;
+            border: 1px solid black;
+            width: 100px;
+            height: 103px;
+            display: flex;
+            flex-direction: column;
+            .amPmBox {
+                border: 1px solid red;
+                height: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
         }
 
         .selectContainer {
