@@ -45,19 +45,20 @@ export default function Form() {
                         <input className='twoDigitInput' />
                         <input className='twoDigitInput' />
                         <span className={styles.amPmContainer}>{isAm ? 'AM' : 'PM'}
-                            <Image src="/assets/icons/icon-arrow.svg" alt="line pattern" width="16" height="8"  />
-                            
+                            <Image src="/assets/icons/icon-arrow.svg" alt="arrow" width="16" height="8"  />
                         </span>
-                        
                     </div>
-                    <span className={styles.amPmSelector}>AM PM</span>
+                    <div className={styles.amPmSelector}>
+                        <span><Image src="/assets/icons/icon-check.svg" alt="check" width="11" height="8"  />AM</span>
+                        <span><Image src="/assets/icons/icon-check.svg" alt="check" width="11" height="8"  />PM</span>
+                    </div>
                     <div className={styles.selectContainer}>
                         <span onClick={() => decrement()} className={styles.decrement} >
-                            <Image src="/assets/icons/icon-minus.svg" alt="line pattern" width="10" height="3"  />
+                            <Image src="/assets/icons/icon-minus.svg" alt="minus" width="10" height="3"  />
                         </span>
                         <span >{peopleCount} people</span>
                             <span onClick={() => increment()} className={styles.increment} >
-                                <Image src="/assets/icons/icon-plus.svg" alt="line pattern" width="10" height="10"  />
+                                <Image src="/assets/icons/icon-plus.svg" alt="plus" width="10" height="10"  />
                         </span>
                     </div>
                     <a>MAKE RESERVATIONS</a>
