@@ -84,6 +84,17 @@
             }
         }
 
+        .amPmSelector {
+                    z-index: 2;
+                    position: absolute;
+                    background-color: white;
+                    top: 22rem;
+                    right: 10%;
+                    border: 1px solid black;
+                    width: 100px;
+                    height: 103px;
+        }
+
         .selectContainer {
             width: 80%;
             height: 45px;
