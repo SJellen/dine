@@ -17,7 +17,7 @@ export default function Form() {
     }
 
     function handleArrowClick() {
-
+        setShowDropDown(prevState => !prevState)
     }
 
     
@@ -50,21 +50,24 @@ export default function Form() {
                         <input className='twoDigitInput' />
                         <input className='twoDigitInput' />
                         <span className={styles.amPmContainer}>{isAm ? 'AM' : 'PM'}
-                            <Image src="/assets/icons/icon-arrow.svg" alt="arrow" width="16" height="8"  />
+                            <div className={styles.arrowContainer}>
+                              <Image src="/assets/icons/icon-arrow.svg" alt="arrow" width="16" height="8" onClick={() => handleArrowClick()} />  
+                            </div>
+                            
                         </span>
                     </div>
-                    <div className={styles.amPmSelector}>
+                    <div className={styles.amPmSelector} style={{display: showDropDown ? '' : 'none'}}>
                         <span className={styles.amPmBox}>   
                             <span style={{opacity: isAm ? 1 : 0}}>
-                                <Image src="/assets/icons/icon-check.svg" alt="check" width="14" height="8"  />
+                                <Image src="/assets/icons/icon-check.svg" alt="check" width="12" height="8"  />
                             </span>
-                            AM
+                            <span className={styles.label} >AM</span>
                         </span>
-                        <span className={styles.amPmBox}>
+                        <span className={styles.amPmBox} >
                             <span style={{opacity: isAm ? 0 : 1}}>
-                               <Image src="/assets/icons/icon-check.svg" alt="check" width="14" height="8" /> 
+                               <Image src="/assets/icons/icon-check.svg" alt="check" width="12" height="8" /> 
                             </span>
-                            PM
+                            <span className={styles.label} >PM</span>
                         </span>
                             
                     </div>

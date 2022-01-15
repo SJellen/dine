@@ -93,12 +93,18 @@
             height: 103px;
             display: flex;
             flex-direction: column;
+            justify-content: space-evenly;
             .amPmBox {
-                height: 50%;
+                height: 40%;
                 display: flex;
                 justify-content: space-evenly;
                 align-items: center;
             }
+            .label:hover {
+                cursor: pointer;
+            }
+            
+            
         }
 
         .selectContainer {
