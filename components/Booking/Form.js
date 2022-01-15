@@ -6,6 +6,7 @@ export default function Form() {
 
     const [peopleCount, setPeopleCount] = useState(4)
     const [isAm, setIsAm] = useState(true)
+    const [showDropDown, setShowDropDown] = useState(false)
 
     function increment() {
         setPeopleCount(prevState => prevState + 1)
@@ -13,6 +14,10 @@ export default function Form() {
 
     function decrement() {
         if (peopleCount > 1) setPeopleCount(prevState => prevState - 1)
+    }
+
+    function handleArrowClick() {
+
     }
 
     
@@ -49,10 +54,19 @@ export default function Form() {
                         </span>
                     </div>
                     <div className={styles.amPmSelector}>
+                        <span className={styles.amPmBox}>   
+                            <span style={{opacity: isAm ? 1 : 0}}>
+                                <Image src="/assets/icons/icon-check.svg" alt="check" width="14" height="8"  />
+                            </span>
+                            AM
+                        </span>
                         <span className={styles.amPmBox}>
-                            <Image src="/assets/icons/icon-check.svg" alt="check" width="14" height="8"  />AM</span>
-                        <span className={styles.amPmBox}>
-                            <Image src="/assets/icons/icon-check.svg" alt="check" width="14" height="8" />PM</span>
+                            <span style={{opacity: isAm ? 0 : 1}}>
+                               <Image src="/assets/icons/icon-check.svg" alt="check" width="14" height="8" /> 
+                            </span>
+                            PM
+                        </span>
+                            
                     </div>
                     <div className={styles.selectContainer}>
                         <span onClick={() => decrement()} className={styles.decrement} >
