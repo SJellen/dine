@@ -80,6 +80,9 @@
                 justify-content: space-evenly;
                 align-items: center;
             }
+            .arrowContainer:hover {
+                cursor: pointer;
+            }
         }
 
         .amPmSelector {
@@ -95,10 +98,10 @@
             flex-direction: column;
             justify-content: space-evenly;
             .amPmBox {
-                height: 40%;
+                height: auto;
                 display: flex;
                 justify-content: space-evenly;
-                align-items: center;
+                align-items:center
             }
             .label:hover {
                 cursor: pointer;

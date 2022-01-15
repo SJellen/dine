@@ -20,6 +20,15 @@ export default function Form() {
         setShowDropDown(prevState => !prevState)
     }
 
+    function handleAmClick() {
+        setIsAm(true)
+        setShowDropDown(false)
+    }
+    function handlePmClick() {
+        setIsAm(false)
+        setShowDropDown(false)
+    }
+
     
     return (
         <div className={styles.container}>
@@ -51,24 +60,24 @@ export default function Form() {
                         <input className='twoDigitInput' />
                         <span className={styles.amPmContainer}>{isAm ? 'AM' : 'PM'}
                             <div className={styles.arrowContainer}>
-                              <Image src="/assets/icons/icon-arrow.svg" alt="arrow" width="16" height="8" onClick={() => handleArrowClick()} />  
+                              <Image src="/assets/icons/icon-arrow.svg" alt="arrow" width="16" height="8" onClick={handleArrowClick} />  
                             </div>
                             
                         </span>
                     </div>
                     <div className={styles.amPmSelector} style={{display: showDropDown ? '' : 'none'}}>
-                        <span className={styles.amPmBox}>   
+                        <div className={styles.amPmBox}>   
                             <span style={{opacity: isAm ? 1 : 0}}>
                                 <Image src="/assets/icons/icon-check.svg" alt="check" width="12" height="8"  />
                             </span>
-                            <span className={styles.label} >AM</span>
-                        </span>
-                        <span className={styles.amPmBox} >
+                            <span className={styles.label} onClick={handleAmClick}>AM</span>
+                        </div>
+                        <div className={styles.amPmBox} >
                             <span style={{opacity: isAm ? 0 : 1}}>
                                <Image src="/assets/icons/icon-check.svg" alt="check" width="12" height="8" /> 
                             </span>
-                            <span className={styles.label} >PM</span>
-                        </span>
+                            <span className={styles.label} onClick={handlePmClick}>PM</span>
+                        </div>
                             
                     </div>
                     <div className={styles.selectContainer}>
