@@ -52,7 +52,6 @@
         .dateContainer, .timeContainer {
             width: 80%;
             height: 45px;
-            border: 1px solid red;
             display: flex;
             flex-direction: row;
             justify-content: space-between;
@@ -71,10 +70,10 @@
         .timeContainer {
             span {
                 width: 97px;
-                border: 1px solid V.$codGray;
+                border: none;
+                border-bottom: 1px solid V.$codGray;
             }
             .amPmContainer {
-                border: 1px solid blue;
                 display: flex;
                 flex-direction: row;
                 justify-content: space-evenly;

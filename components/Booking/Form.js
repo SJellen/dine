@@ -59,7 +59,7 @@ export default function Form() {
                         <input className='twoDigitInput' />
                         <input className='twoDigitInput' />
                         <span className={styles.amPmContainer}>{isAm ? 'AM' : 'PM'}
-                            <div className={styles.arrowContainer}>
+                            <div className={styles.arrowContainer} style={{transform: showDropDown ? "rotate(180deg" : ''}} >
                               <Image src="/assets/icons/icon-arrow.svg" alt="arrow" width="16" height="8" onClick={handleArrowClick} />  
                             </div>
                             
