@@ -50,14 +50,14 @@ export default function Form() {
                     </div>
                     <div className={styles.dateContainer}>
                         <h4>Pick a date</h4>
-                        <input className='twoDigitInput' />
-                        <input className='twoDigitInput' />
-                        <input className='fourDigitInput' id='fourDigitInput' />
+                        <input className='twoDigitInput' placeholder='MM' />
+                        <input className='twoDigitInput' placeholder='DD' />
+                        <input className='fourDigitInput' id='fourDigitInput' placeholder='YYYY' />
                     </div>
                     <div className={styles.timeContainer}>
                         <h4>Pick a time</h4>
-                        <input className='twoDigitInput' />
-                        <input className='twoDigitInput' />
+                        <input className='twoDigitInput' placeholder='09' />
+                        <input className='twoDigitInput' placeholder='00' />
                         <span className={styles.amPmContainer}>{isAm ? 'AM' : 'PM'}
                             <div className={styles.arrowContainer} style={{transform: showDropDown ? "rotate(180deg" : ''}} >
                               <Image src="/assets/icons/icon-arrow.svg" alt="arrow" width="16" height="8" onClick={handleArrowClick} />  
