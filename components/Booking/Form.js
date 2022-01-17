@@ -1,33 +1,11 @@
 import { useState } from 'react'
 import styles from '../../styles/Book/Form.module.scss'
 import Image from 'next/image'
+import useFormLogic from './useFormLogic'
 
 export default function Form() {
 
-    const [peopleCount, setPeopleCount] = useState(4)
-    const [isAm, setIsAm] = useState(true)
-    const [showDropDown, setShowDropDown] = useState(false)
-
-    function increment() {
-        setPeopleCount(prevState => prevState + 1)
-    }
-
-    function decrement() {
-        if (peopleCount > 1) setPeopleCount(prevState => prevState - 1)
-    }
-
-    function handleArrowClick() {
-        setShowDropDown(prevState => !prevState)
-    }
-
-    function handleAmClick() {
-        setIsAm(true)
-        setShowDropDown(false)
-    }
-    function handlePmClick() {
-        setIsAm(false)
-        setShowDropDown(false)
-    }
+    const {isAm, showDropDown, handleArrowClick, handleAmClick, handlePmClick, peopleCount, increment, decrement} = useFormLogic()
 
     
     return (
