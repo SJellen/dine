@@ -27,6 +27,18 @@ function useFormLogic() {
         setShowDropDown(false)
     }
 
+    const initialForm = {
+        name: '',
+        email: '',
+        month: '',
+        day: '',
+        year: '',
+        hour: '',
+        minute: ''
+    }
+
+    const [formInfo, setFormInfo] = useState(initialForm)
+
     
 
     return {isAm, showDropDown, handleArrowClick, handleAmClick, handlePmClick, peopleCount, increment, decrement}
