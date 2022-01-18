@@ -153,11 +153,12 @@
         }
         
         
-        a {
+        button {
             display: flex;
             align-items: center;
             justify-content: center;
             background-color: V.$codGray;
+            border: none;
             color: white;
             font-size: 14px;
             font-weight: 600;
@@ -165,7 +166,7 @@
             width: 80%;
             height: 65px;
         }
-        a:hover {
+        button:hover {
             background-color: transparent;
             color: black;
             border: 1px solid black;

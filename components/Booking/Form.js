@@ -5,7 +5,7 @@ import useFormLogic from './useFormLogic'
 
 export default function Form() {
 
-    const {isAm, showDropDown, handleArrowClick, handleAmClick, handlePmClick, peopleCount, increment, decrement, handleSubmit, handleChange} = useFormLogic()
+    const {isAm, showDropDown, handleArrowClick, handleAmClick, handlePmClick, peopleCount, increment, decrement, handleSubmit, handleChange, formInfo} = useFormLogic()
 
     return (
         <div className={styles.container}>
@@ -15,6 +15,8 @@ export default function Form() {
                 <form id="form" onSubmit={handleSubmit}>
                     <div className={styles.topContainer}>
                        <input
+                            onChange={handleChange}
+                            // value={formInfo.name}
                             id="name"
                             name='name'
                             type='text'
@@ -95,7 +97,7 @@ export default function Form() {
                                 <Image src="/assets/icons/icon-plus.svg" alt="plus" width="10" height="10"  />
                         </span>
                     </div>
-                    <a form="form" type="submit" >MAKE RESERVATIONS</a>
+                    <button form="form" type="submit" >MAKE RESERVATIONS</button>
                 </form>
             </div>
         </div>
