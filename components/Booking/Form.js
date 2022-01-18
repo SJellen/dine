@@ -24,6 +24,7 @@ export default function Form() {
                             placeholder='Name'
                         />
                         <input
+                            onChange={handleChange}
                             id="email"
                             name='email'
                             type='text'
@@ -34,43 +35,56 @@ export default function Form() {
                     <div className={styles.dateContainer}>
                         <h4>Pick a date</h4>
                         <input 
+                            onChange={handleChange}
                             id='month'
                             name='month'
                             type='number'
+                            min='1'
+                            max='12'
                             className='twoDigitInput'
                             placeholder='MM' />
-                        <input 
+                        <input
+                            onChange={handleChange} 
                             id='day'
                             name='day'
                             type='number'
+                            min='1'
+                            max='31'
                             className='twoDigitInput'
                             placeholder='DD' />
                         <input 
+                            onChange={handleChange}
                             id='year'
                             name='year'
                             type='number'
+                            min='2022'
                             className='fourDigitInput' 
                             placeholder='YYYY' />
                     </div>
                     <div className={styles.timeContainer}>
                         <h4>Pick a time</h4>
                         <input 
+                            onChange={handleChange}
                             id='hour'
                             name='hour'
                             type='number'
+                            min='1'
+                            max='12'
                             className='twoDigitInput' 
                             placeholder='09' />
                         <input 
+                            onChange={handleChange}
                             id='minute'
                             name='minute'
                             type='number'
+                            min='00'
+                            max='59'
                             className='twoDigitInput' 
                             placeholder='00' />
                         <span className={styles.amPmContainer}>{isAm ? 'AM' : 'PM'}
                             <div className={styles.arrowContainer} style={{transform: showDropDown ? "rotate(180deg" : ''}} >
                               <Image src="/assets/icons/icon-arrow.svg" alt="arrow" width="16" height="8" onClick={handleArrowClick} />  
                             </div>
-                            
                         </span>
                     </div>
                     <div className={styles.amPmSelector} style={{display: showDropDown ? '' : 'none'}}>

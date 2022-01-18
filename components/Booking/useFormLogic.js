@@ -51,8 +51,7 @@ function useFormLogic() {
         console.log(formInfo)
         e.preventDefault()
         if (formInfo.name === 0) {
-            
-            document.getElementById("#name").style.border = '1px solid red'
+        
         }
     }
 
