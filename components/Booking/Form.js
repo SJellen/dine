@@ -7,9 +7,6 @@ export default function Form() {
 
     const {isAm, showDropDown, handleArrowClick, handleAmClick, handlePmClick, peopleCount, increment, decrement, handleSubmit, handleChange} = useFormLogic()
 
-    
-
-    
     return (
         <div className={styles.container}>
             <div className={styles.imgContainer}></div>
@@ -19,25 +16,54 @@ export default function Form() {
                     <div className={styles.topContainer}>
                        <input
                             id="name"
+                            name='name'
+                            type='text'
                             className='nameEmailInput'
                             placeholder='Name'
                         />
                         <input
                             id="email"
+                            name='email'
+                            type='text'
                             className='nameEmailInput'
                             placeholder='Email' 
                         /> 
                     </div>
                     <div className={styles.dateContainer}>
                         <h4>Pick a date</h4>
-                        <input className='twoDigitInput' placeholder='MM' />
-                        <input className='twoDigitInput' placeholder='DD' />
-                        <input className='fourDigitInput' id='fourDigitInput' placeholder='YYYY' />
+                        <input 
+                            id='month'
+                            name='month'
+                            type='number'
+                            className='twoDigitInput'
+                            placeholder='MM' />
+                        <input 
+                            id='day'
+                            name='day'
+                            type='number'
+                            className='twoDigitInput'
+                            placeholder='DD' />
+                        <input 
+                            id='year'
+                            name='year'
+                            type='number'
+                            className='fourDigitInput' 
+                            placeholder='YYYY' />
                     </div>
                     <div className={styles.timeContainer}>
                         <h4>Pick a time</h4>
-                        <input className='twoDigitInput' placeholder='09' />
-                        <input className='twoDigitInput' placeholder='00' />
+                        <input 
+                            id='hour'
+                            name='hour'
+                            type='number'
+                            className='twoDigitInput' 
+                            placeholder='09' />
+                        <input 
+                            id='minute'
+                            name='minute'
+                            type='number'
+                            className='twoDigitInput' 
+                            placeholder='00' />
                         <span className={styles.amPmContainer}>{isAm ? 'AM' : 'PM'}
                             <div className={styles.arrowContainer} style={{transform: showDropDown ? "rotate(180deg" : ''}} >
                               <Image src="/assets/icons/icon-arrow.svg" alt="arrow" width="16" height="8" onClick={handleArrowClick} />  
