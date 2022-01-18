@@ -5,7 +5,7 @@ import useFormLogic from './useFormLogic'
 
 export default function Form() {
 
-    const {isAm, showDropDown, handleArrowClick, handleAmClick, handlePmClick, peopleCount, increment, decrement} = useFormLogic()
+    const {isAm, showDropDown, handleArrowClick, handleAmClick, handlePmClick, peopleCount, increment, decrement, handleSubmit, handleChange} = useFormLogic()
 
     
 
@@ -15,7 +15,7 @@ export default function Form() {
             <div className={styles.imgContainer}></div>
                 <Image src="/assets/patterns/pattern-lines.svg" alt="line pattern" width="160" height="70"  />
             <div>
-                <form>
+                <form id="form" onSubmit={handleSubmit}>
                     <div className={styles.topContainer}>
                        <input
                             id="name"
@@ -69,7 +69,7 @@ export default function Form() {
                                 <Image src="/assets/icons/icon-plus.svg" alt="plus" width="10" height="10"  />
                         </span>
                     </div>
-                    <a>MAKE RESERVATIONS</a>
+                    <a form="form" type="submit" >MAKE RESERVATIONS</a>
                 </form>
             </div>
         </div>

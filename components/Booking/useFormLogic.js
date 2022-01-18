@@ -39,9 +39,23 @@ function useFormLogic() {
 
     const [formInfo, setFormInfo] = useState(initialForm)
 
+    function handleChange(e) {
+        setFormInfo({
+            ...formInfo,
+            [e.target.name]: e.target.value
+        })
+    }
+
+    function handleSubmit(e) {
+        e.preventDefault()
+        if (formInfo.name === 0) {
+            
+        }
+    }
+
     
 
-    return {isAm, showDropDown, handleArrowClick, handleAmClick, handlePmClick, peopleCount, increment, decrement}
+    return {isAm, showDropDown, handleArrowClick, handleAmClick, handlePmClick, peopleCount, increment, decrement, handleSubmit, handleChange}
 }
 
 export default useFormLogic
