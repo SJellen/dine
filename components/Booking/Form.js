@@ -16,13 +16,13 @@ export default function Form() {
                     <div className={styles.topContainer}>
                        <input
                             onChange={handleChange}
-                            // value={formInfo.name}
                             id="name"
                             name='name'
                             type='text'
                             className='nameEmailInput'
                             placeholder='Name'
                         />
+                        <p>This field is incomplete</p>
                         <input
                             onChange={handleChange}
                             id="email"
@@ -31,11 +31,12 @@ export default function Form() {
                             className='nameEmailInput'
                             placeholder='Email' 
                         /> 
+                        <p>This field is incomplete</p>
                     </div>
                     <div className={styles.dateContainer}>
                         <div className={styles.leftContainer}>
                             <h4>Pick a date</h4>
-                            <h6>This field is incomplete</h6>
+                            <p>This field is incomplete</p>
                         </div>
                         
                         <input 
@@ -68,7 +69,7 @@ export default function Form() {
                     <div className={styles.timeContainer}>
                         <div className={styles.leftContainer}>
                             <h4>Pick a time</h4>
-                            <h6>This field is incomplete</h6>
+                            <p>This field is incomplete</p>
                         </div>
                         <input 
                             onChange={handleChange}
