@@ -85,7 +85,21 @@
                 color: V.$codGray;
                 font-size: 18px;
                 font-weight: 400;
+                margin: 0 auto;
+                margin-left: 0;
             } 
+            h6 {
+                margin: 0 auto;
+                font-size: 10px;
+                color: #B54949;
+            }
+            .leftContainer {
+                width: 130px;
+                height: 50px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+            }
         }
 
         .timeContainer {

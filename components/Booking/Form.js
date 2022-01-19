@@ -33,7 +33,11 @@ export default function Form() {
                         /> 
                     </div>
                     <div className={styles.dateContainer}>
-                        <h4>Pick a date</h4>
+                        <div className={styles.leftContainer}>
+                            <h4>Pick a date</h4>
+                            <h6>This field is incomplete</h6>
+                        </div>
+                        
                         <input 
                             onChange={handleChange}
                             id='month'
@@ -62,7 +66,10 @@ export default function Form() {
                             placeholder='YYYY' />
                     </div>
                     <div className={styles.timeContainer}>
-                        <h4>Pick a time</h4>
+                        <div className={styles.leftContainer}>
+                            <h4>Pick a time</h4>
+                            <h6>This field is incomplete</h6>
+                        </div>
                         <input 
                             onChange={handleChange}
                             id='hour'
