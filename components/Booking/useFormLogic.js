@@ -47,11 +47,31 @@ function useFormLogic() {
         })
     }
 
+    function validateEmail(email) {
+        const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+        return re.test(String(email).toLowerCase());
+    }
+
+    function errorStyles(element) {
+        document.querySelector(`#${element}`).style.opacity = "1";
+    }
+
+    function defaultStyles(element) {
+        document.querySelector(`#${element}`).style.opacity = "";
+    }
+
     function handleSubmit(e) {
         console.log(formInfo)
         e.preventDefault()
-        if (formInfo.name === 0) {
-        
+        if (formInfo.name.length === 0) {
+            errorStyles("nameError")
+        } else {
+            defaultStyles("nameError")
+        }
+        if (validateEmail(formInfo.email) === false) {
+            errorStyles("emailError")
+        } else {
+            defaultStyles("emailError")
         }
     }
 

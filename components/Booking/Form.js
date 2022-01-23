@@ -22,7 +22,7 @@ export default function Form() {
                             className='nameEmailInput'
                             placeholder='Name'
                         />
-                        <p>This field is incomplete</p>
+                        <p className={styles.error} id="nameError">This field is incomplete</p>
                         <input
                             onChange={handleChange}
                             id="email"
@@ -31,7 +31,7 @@ export default function Form() {
                             className='nameEmailInput'
                             placeholder='Email' 
                         /> 
-                        <p>This field is incomplete</p>
+                        <p className={styles.error} id="emailError">This field is invalid</p>
                     </div>
                     <div className={styles.dateContainer}>
                         <div className={styles.leftContainer}>
