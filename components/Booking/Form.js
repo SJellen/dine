@@ -36,7 +36,7 @@ export default function Form() {
                     <div className={styles.dateContainer}>
                         <div className={styles.leftContainer}>
                             <h4>Pick a date</h4>
-                            <p>This field is incomplete</p>
+                            <p className={styles.error} id="dateError">This field is incomplete</p>
                         </div>
                         
                         <input 
@@ -69,7 +69,7 @@ export default function Form() {
                     <div className={styles.timeContainer}>
                         <div className={styles.leftContainer}>
                             <h4>Pick a time</h4>
-                            <p>This field is incomplete</p>
+                            <p className={styles.error} id="timeError">This field is incomplete</p>
                         </div>
                         <input 
                             onChange={handleChange}

@@ -61,7 +61,6 @@ function useFormLogic() {
     }
 
     function handleSubmit(e) {
-        console.log(formInfo)
         e.preventDefault()
         if (formInfo.name.length === 0) {
             errorStyles("nameError")
@@ -73,6 +72,19 @@ function useFormLogic() {
         } else {
             defaultStyles("emailError")
         }
+        if (formInfo.month.length === 0 || formInfo.day.length === 0 || formInfo.year.length === 0) {
+            errorStyles("dateError")
+        } else {
+            defaultStyles("dateError")
+        }
+        if (formInfo.hour.length === 0 || formInfo.minute.length === 0) {
+            errorStyles("timeError")
+        } else {
+            defaultStyles("timeError")
+        }
+        console.log(formInfo)
+        setFormInfo(initialForm)   
+        console.log(formInfo)
     }
 
     
