@@ -1,6 +1,6 @@
 import { useState } from "react"
 
-function useFormLogic() {
+export default function useFormLogic() {
 
     const [peopleCount, setPeopleCount] = useState(4)
     const [isAm, setIsAm] = useState(true)
@@ -39,14 +39,6 @@ function useFormLogic() {
 
     const [formInfo, setFormInfo] = useState(initialForm)
 
-
-    function handleChange(e) {
-        setFormInfo({
-            ...formInfo,
-            [e.target.name]: e.target.value
-        })
-    }
-
     function validateEmail(email) {
         const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
         return re.test(String(email).toLowerCase());
@@ -58,6 +50,13 @@ function useFormLogic() {
 
     function defaultStyles(element) {
         document.querySelector(`#${element}`).style.opacity = "";
+    }
+
+    function handleChange(e) {
+        setFormInfo({
+            ...formInfo,
+            [e.target.name]: e.target.value
+        })
     }
 
     function handleSubmit(e) {
@@ -83,8 +82,6 @@ function useFormLogic() {
             defaultStyles("timeError")
         }
         console.log(formInfo)
-        setFormInfo(initialForm)   
-        console.log(formInfo)
     }
 
     
@@ -92,5 +89,5 @@ function useFormLogic() {
     return {isAm, showDropDown, handleArrowClick, handleAmClick, handlePmClick, peopleCount, increment, decrement, handleSubmit, handleChange}
 }
 
-export default useFormLogic
+
 
