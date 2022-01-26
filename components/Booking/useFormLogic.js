@@ -82,6 +82,9 @@ export default function useFormLogic() {
             defaultStyles("timeError")
         }
         console.log(formInfo)
+        if (formInfo.name.length !== 0 && validateEmail(formInfo.email) === true && formInfo.month.length !== 0 && formInfo.day.length !== 0 && formInfo.year.length !== 0 && formInfo.hour.length !== 0 && formInfo.minute.length !== 0) {
+            setFormInfo(initialForm)
+        }
     }
 
     
